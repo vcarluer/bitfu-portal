@@ -1,5 +1,6 @@
 {% include 'header.html' %}
-	<form method="GET" class="form-inline" action="https://searx.bitfu.io/">
+	<div> Hello {{ user }}. <a href="https://login.bitfu.io/logout">logout</a></div>
+	<form style="margin: 25px" method="GET" class="form-inline" action="https://searx.bitfu.io/">
 		<div class="form-group" style="width:75%">
 			<div style="width:100%" class="input-group">
 				<input type="text" class="form-control" name="q" placeholder="Search for...">
