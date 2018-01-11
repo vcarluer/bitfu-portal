@@ -2,7 +2,7 @@ export FLASK_APP=portal.py
 if [[ "$1" == "--prod" ]]; then
 	export FLASK_DEBUG=0
 	HOST='0.0.0.0'
-	PORT=4242
+	PORT=4244
 	nohup='nohup '
 else
 	export FLASK_DEBUG=1
