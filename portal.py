@@ -10,6 +10,8 @@ def home():
     user = request.headers.get("X-User-Id")
     df = subprocess.Popen(["df", "-h", "/home/plexlib"], stdout=subprocess.PIPE)
     output = df.communicate()[0]
+    strOutput = str( output, encoding='utf8' )
+    logging.warning(strOutput)
     device, size, used, available, percent, mountpoint = \
-                output.split("\n")[1].split()
+                strOutput.split("\n")[1].split()
     return render_template('home.html', user=user, freeSpace=available)

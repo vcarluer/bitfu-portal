@@ -6,8 +6,8 @@ if [[ "$1" == "--prod" ]]; then
 	nohup='nohup '
 else
 	export FLASK_DEBUG=1
-	HOST='127.0.0.1'
-	PORT=5000
+	HOST='0.0.0.0'
+	PORT=4244
 	nohup=''
 fi
 
