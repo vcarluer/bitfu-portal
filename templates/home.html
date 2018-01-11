@@ -1,13 +1,5 @@
 {% include 'header.html' %}
 	<div> Hello {{ user }}. <a href="https://login.bitfu.io/logout">logout</a></div>
-	<form style="margin: 25px" method="GET" class="form-inline" action="https://searx.bitfu.io/">
-		<div class="form-group" style="width:75%">
-			<div style="width:100%" class="input-group">
-				<input type="text" class="form-control" name="q" placeholder="Search for...">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
-				</span>
-			</div>
-		</div>
-	</form>
+{% include 'search.html' %}
+{% include 'thumbnails.html' %}
 {% include 'footer.html' %}
