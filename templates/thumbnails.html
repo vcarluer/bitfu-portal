@@ -1,13 +1,13 @@
 <div class="row">
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<a href="https://plex.bitfu.io">
-			<img src="/static/Plex.jpg" alt="Plex">
-			<div class="caption">
-				<h3>Plex Media Server</h3>
-				<p>Plex is a client-server media player system and software suite</p>
-			</div>
-			</a>
-		</div>
-	</div>
+	<h2>Media server</h2>
+{% include 'plex.html' %}
+{% include 'torrent.html' %}
+{% include 'sonarr.html' %}
+{% include 'radarr.html' %}
+{% include 'jackett.html' %}
+</div>
+<div class="row">
+	<h2>Office</h2>
+{% include 'rainloop.html' %}
+{% include 'radicale.html' %}
 </div>
