@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def home():
     user = request.headers.get("X-User-Id")
-    df = subprocess.Popen(["df", "-h", "/home/plexlib"], stdout=subprocess.PIPE)
+    df = subprocess.Popen(["df", "-h", "/mnt/.sb"], stdout=subprocess.PIPE)
     output = df.communicate()[0]
     strOutput = str( output, encoding='utf8' )
     logging.warning(strOutput)
